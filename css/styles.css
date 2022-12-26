@@ -139,14 +139,6 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-link);
 }
-/* header */ /* icons */
-.icon-tel, .icon-mail {
-  cursor: pointer;
-  margin-right: 10px;
-  fill: var(--color-link);
-  background-color: red;
-}
-
 .kontakt-t:hover, .kontakt-m:hover,
 .kontakt-t:focus, .kontakt-m:focus {
   color: var(--color-hader);
@@ -315,11 +307,12 @@ img {
   gap: 24px;
 }
 .skills-button {
-  padding: 0;
-  border: none;
   width: 264px;
   height: 112px;
   margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #F4F4FD;
   border-radius: 4px;
 }
@@ -459,16 +452,6 @@ img {
   display: inline-flex;
   gap: 24px;
 }
-.container-li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 168px;
-  height: 88px;
-  border: 1px solid #8E8F99;
-  border-radius: 4px;
-  border-color: #8E8F99;
-}
 /* customers */
 /* fonts */
 .container-h {
@@ -480,10 +463,28 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-text);
 } 
-
 /* customers */
 /* icon */
+.container-li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 88px;
 
+  fill: #8E8F99;
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+  border-color: #8E8F99;
+}
+.customers-icon {
+  fill:inherit;
+}
+.container-li:hover {
+  fill: #404BBF;
+  border: 1px solid #404BBF;
+  border-radius: 4px;
+}
 /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */
 /* PARTFOLIO */
 .portfolio-section {
