@@ -132,31 +132,27 @@ img {
 }
 .kontakt-t, .kontakt-m {
   display: inline-flex;
-  align-items: flex-start;
+  align-items: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-link);
 }
-.kontakt-t::before {
-  content: "";
-  width: 20px;
-  height: 20px;
+/* header */ /* icons */
+.icon-tel, .icon-mail {
+  cursor: pointer;
   margin-right: 10px;
+  fill: var(--color-link);
   background-color: red;
 }
-.kontakt-m::before {
-  content:"";
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  background-color: red;
-}
+
 .kontakt-t:hover, .kontakt-m:hover,
 .kontakt-t:focus, .kontakt-m:focus {
   color: var(--color-hader);
+  fill: var(--color-hader);
 }
+
 /* decor */
 .flex {
   display: flex;
