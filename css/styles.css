@@ -481,7 +481,7 @@ img {
 .customers-icon {
   fill:inherit;
 }
-.container-li:hover {
+.container-li:hover, .container-li:focus {
   fill: #404BBF;
   border: 1px solid #404BBF;
   border-radius: 4px;
